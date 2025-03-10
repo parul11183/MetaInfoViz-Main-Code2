@@ -1,0 +1,28 @@
+.home-container {
+  @apply min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900;
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+  @apply container mx-auto px-4 h-screen flex items-center justify-between max-w-7xl;
+}
+
+.hero-text {
+  @apply space-y-6 max-w-xl;
+}
+
+.glass-card {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glow {
+  text-shadow: 0 0 20px rgba(192, 132, 252, 0.5);
+}

@@ -1,0 +1,39 @@
+.content-con {
+  @apply flex gap-4 h-[calc(100vh-8rem)] w-full min-w-0;
+}
+
+.plot-con {
+  @apply flex-1 rounded-lg border bg-card shadow-sm flex flex-col min-w-[500px];
+}
+
+.plot-header {
+  @apply p-4 border-b;
+}
+
+.plot-content {
+  @apply flex-1 p-4 h-full min-h-0 overflow-auto;
+}
+
+.features-con {
+  @apply w-[380px] flex-none flex flex-col gap-4 min-h-0;
+}
+
+.tools-grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.tools-full {
+  @apply col-span-2;
+}
+
+.tools-con, .summary-con {
+  @apply rounded-lg border bg-card shadow-sm;
+}
+
+.section-header {
+  @apply flex items-center justify-between px-4 py-2 border-b;
+}
+
+.section-content {
+  @apply p-4;
+}

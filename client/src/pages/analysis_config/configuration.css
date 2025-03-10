@@ -1,0 +1,122 @@
+.config-container {
+  gap: 2rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.categories-con {
+  /* background-color: white; */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-height: 90vh;
+  /* border: 1px solid #e5e7eb; */
+}
+
+.attributes-con {
+  /* background-color: white; */
+  padding: 1.5rem;
+  /* overflow-y: auto; */
+  max-height: 90vh;
+}
+
+/* configuration.css - Add these styles to your existing CSS file */
+
+.configuration-maincon {
+  height: 100vh;
+  padding: 2rem 2rem 4rem;
+  overflow: hidden;
+}
+
+.config-container {
+  height: calc(100vh - 10rem);
+}
+
+.categories-con {
+  width: 300px;
+  padding-right: 1.5rem;
+  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.attributes-con {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mapping-container {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+  padding-right: 0.5rem;
+}
+
+.mapping-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mapping-container::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.mapping-container::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 4px;
+}
+
+/* Styling for the mapping rows */
+.mapping-row {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.mapping-row:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.feature-name {
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .config-container {
+    flex-direction: column;
+  }
+  
+  .categories-con {
+    width: 100%;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    max-height: 40vh;
+  }
+  
+  .attributes-con {
+    padding-left: 0;
+  }
+  
+  .mapping-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature-name {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .column-select {
+    width: 100%;
+  }
+}

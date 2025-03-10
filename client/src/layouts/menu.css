@@ -1,0 +1,17 @@
+.menu-content {
+  @apply min-h-[calc(100vh-4rem)] bg-gradient-to-br from-background to-background/50;
+}
+
+/* Sidebar hover effects */
+.sidebar-link {
+  @apply relative overflow-hidden;
+}
+
+.sidebar-link::after {
+  @apply absolute inset-0 bg-gradient-to-r from-purple-600/10 to-transparent opacity-0 transition-opacity;
+  content: '';
+}
+
+.sidebar-link:hover::after {
+  @apply opacity-100;
+}
