@@ -45,7 +45,7 @@
     
 // //     setError(null);
 // //     try {
-// //       const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+// //       const response = await axios.get("http://13.233.2.203:80/api/get-data/");
 // //       const years = [...new Set(response.data.map(item => item.Year))].sort();
 // //       setYearRange(years);
 // //       setStartYear(years[0]);
@@ -322,7 +322,7 @@
 //   const fetchData = async () => {
 //     setIsLoading(true);
 //     try {
-//       const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+//       const response = await axios.get("http://13.233.2.203:80/api/get-data/");
 //       const years = [...new Set(response.data.map(item => item.Year))].sort();
 //       setYearRange(years);
 //       setStartYear(years[0]);
@@ -619,7 +619,7 @@ const Journals = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
       const years = [...new Set(response.data.map(item => item.Year))].sort();
       setYearRange(years);
       setStartYear(years[0]);

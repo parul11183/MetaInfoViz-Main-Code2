@@ -64,7 +64,7 @@ const ColumnMappingComponent = ({ selectedColumns, onBack, onSubmit }) => {
 
     if (Object.keys(changedMappings).length > 0) {
       try {
-        await axios.post("http://127.0.0.1:8000/api/send-column-mappings/", {
+        await axios.post("http://13.233.2.203:80/api/send-column-mappings/", {
           mappings: changedMappings, columns: mappedColumns
         });
       } catch (error) {
@@ -169,7 +169,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+        const response = await axios.get("http://13.233.2.203:80/api/get-data/");
         setExcelData(response.data.slice(0, 5));
         if (response.data.length > 0) {
           setAvailableColumns(Object.keys(response.data[0]));
@@ -254,7 +254,7 @@ function App() {
     }
 
     const response = await axios.post(
-      "http://127.0.0.1:8000/api/upload-csv/",
+      "http://13.233.2.203:80/api/upload-csv/",
       formData,
       {
         headers: {
@@ -274,7 +274,7 @@ function App() {
     setLoadingMessage("");
     setUploadProgress(0);
     
-    const dataResponse = await axios.get("http://127.0.0.1:8000/api/get-data/");
+    const dataResponse = await axios.get("http://13.233.2.203:80/api/get-data/");
     setExcelData(dataResponse.data.slice(0, 5));
     setTotalRecords(response.data.total_records || dataResponse.data.length); // Add this line
   } catch (error) {
@@ -298,7 +298,7 @@ function App() {
       setExcelData(null);
       setTotalRecords(0);
       const deleteResponse = await axios.delete(
-        "http://127.0.0.1:8000/api/delete-all/"
+        "http://13.233.2.203:80/api/delete-all/"
       );
       console.log(deleteResponse.data.message);
       setExcelData(null);
@@ -361,7 +361,7 @@ function App() {
   
       // First upload and process the files with mappings
       const uploadResponse = await axios.post(
-        "http://127.0.0.1:8000/api/upload-csv2/", 
+        "http://13.233.2.203:80/api/upload-csv2/", 
         formData,
         {
           headers: {
@@ -379,7 +379,7 @@ function App() {
       // If upload successful, fetch the processed data
       if (uploadResponse.status === 200) {
         setLoadingMessage("Retrieving processed data...");
-        const dataResponse = await axios.get("http://127.0.0.1:8000/api/get-data/");
+        const dataResponse = await axios.get("http://13.233.2.203:80/api/get-data/");
         setExcelData(dataResponse.data.slice(0, 5));
       }
   

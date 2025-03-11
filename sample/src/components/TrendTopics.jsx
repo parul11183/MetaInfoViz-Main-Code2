@@ -16,7 +16,7 @@ const TrendTopics = () => {
   useEffect(() => {
     const fetchTrendTopics = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/get-trend-topics/');
+        const response = await axios.get('http://13.233.2.203:80/api/get-trend-topics/');
         setTrendData(response.data);
         setIsLoading(false);
       } catch (error) {

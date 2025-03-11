@@ -14,7 +14,7 @@ const CitedReferences = () => {
   useEffect(() => {
     const fetchPapers = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/get-data/');
+        const response = await axios.get('http://13.233.2.203:80/api/get-data/');
         const papersData = response.data;
         setPapers(papersData);
       } catch (error) {

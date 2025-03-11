@@ -153,7 +153,7 @@ const OpenAccess = () => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/get-data/");
+      const response = await fetch("http://13.233.2.203:80/api/get-data/");
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

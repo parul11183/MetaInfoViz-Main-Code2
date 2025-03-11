@@ -168,7 +168,7 @@ const MainInformation = () => {
   const fetchData = async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
       const data = response.data;
       const years = [...new Set(data.map((item) => item.Year))].sort();
       setYearRange(years);
@@ -270,7 +270,7 @@ const MainInformation = () => {
 
   const applyYearFilter = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
       const filteredData = response.data.filter(
         (item) => item.Year >= startYear && item.Year <= endYear
       );
@@ -370,7 +370,7 @@ const MainInformation = () => {
       `;
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/generate-summary/",
+        "http://13.233.2.203:80/api/generate-summary/",
         { prompt },
         {
           headers: {

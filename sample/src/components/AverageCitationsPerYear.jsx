@@ -188,7 +188,7 @@ const AverageCitationsPerYear = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
       const papers = response.data;
       if (papers && papers.length > 0) {
         const years = [...new Set(papers.map((item) => item.Year))].sort();
@@ -287,7 +287,7 @@ const AverageCitationsPerYear = () => {
 
   const applyYearFilter = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/api/get-data/");
+      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
       const filteredData = response.data.filter(
         (item) => item.Year >= startYear && item.Year <= endYear
       );

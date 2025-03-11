@@ -9,7 +9,7 @@ const Overview = () => {
     useEffect(() => {
         const fetchSummary = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/get-summary/');
+                const response = await fetch('http://13.233.2.203:80/api/get-summary/');
                 if (!response.ok) {
                     throw new Error('Failed to fetch summary');
                 }
