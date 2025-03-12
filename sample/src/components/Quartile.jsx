@@ -364,7 +364,7 @@ const Quartile = () => {
 
             // Fetch journal data from API
             try {
-              const apiResponse = await fetch("http://13.233.2.203:80/api/get-data/");
+              const apiResponse = await fetch("http://3.6.36.17:80/api/get-data/");
               const journalData = await apiResponse.json();
 
               // Process journal data with ISSN mapping

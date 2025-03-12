@@ -54,7 +54,7 @@
 // //   const fetchData = async () => {
 // //     setIsLoading(true);
 // //     try {
-// //       const response = await fetch("http://13.233.2.203:80/api/get-data/");
+// //       const response = await fetch("http://3.6.36.17:80/api/get-data/");
 // //       const data = await response.json();
 // //       const years = [...new Set(data.map((item) => item.Year))].sort();
 // //       setYearRange(years);
@@ -560,7 +560,7 @@
 //   const fetchData = async () => {
 //     setIsLoading(true);
 //     try {
-//       const response = await fetch("http://13.233.2.203:80/api/get-data/");
+//       const response = await fetch("http://3.6.36.17:80/api/get-data/");
 //       const data = await response.json();
 //       const years = [...new Set(data.map((item) => item.Year))].sort();
 //       setYearRange(years);
@@ -1025,7 +1025,7 @@ const Language = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://13.233.2.203:80/api/get-data/");
+      const response = await fetch("http://3.6.36.17:80/api/get-data/");
       const data = await response.json();
       const years = [...new Set(data.map((item) => item.Year))].sort();
       setYearRange(years);

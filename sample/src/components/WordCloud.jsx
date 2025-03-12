@@ -14,7 +14,7 @@ const WordCloud = () => {
   useEffect(() => {
     const fetchWordCloud = async () => {
       try {
-        const response = await axios.get('http://13.233.2.203:80/api/generate-word-cloud/', {
+        const response = await axios.get('http://3.6.36.17:80/api/generate-word-cloud/', {
           responseType: 'text',
         });
         setWordCloudImage(response.data);
@@ -28,7 +28,7 @@ const WordCloud = () => {
 
     const fetchWords = async () => {
       try {
-        const response = await axios.get('http://13.233.2.203:80/api/word-frequencies/');
+        const response = await axios.get('http://3.6.36.17:80/api/word-frequencies/');
         setWords(response.data);
       } catch (error) {
         console.error('Error fetching word frequencies:', error);

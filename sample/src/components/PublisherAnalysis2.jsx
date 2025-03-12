@@ -232,7 +232,7 @@ const PublisherAnalysis2 = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
+      const response = await axios.get("http://3.6.36.17:80/api/get-data/");
       const papers = response.data;
       if (papers && papers.length > 0) {
         processData(papers);
@@ -263,7 +263,7 @@ const PublisherAnalysis2 = () => {
 
   const applyDecadeFilter = async () => {
     try {
-      const response = await axios.get("http://13.233.2.203:80/api/get-data/");
+      const response = await axios.get("http://3.6.36.17:80/api/get-data/");
       processData(response.data);
     } catch (err) {
       setError("Error applying filter: " + err.message);

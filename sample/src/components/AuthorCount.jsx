@@ -59,7 +59,7 @@ const AuthorCount = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://13.233.2.203:80/api/get-data/");
+      const response = await fetch("http://3.6.36.17:80/api/get-data/");
       if (!response.ok) {
         throw new Error('Failed to fetch author data');
       }

@@ -15,7 +15,7 @@ const Author = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://13.233.2.203:80/api/get-most-cited-authors/');
+        const response = await axios.get('http://3.6.36.17:80/api/get-most-cited-authors/');
         setTopAuthors(response.data);
         setIsLoading(false);
       } catch (error) {

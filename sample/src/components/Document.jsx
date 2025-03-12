@@ -72,7 +72,7 @@ const Document = () => {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const response = await fetch('http://13.233.2.203:80/api/get-data/');
+        const response = await fetch('http://3.6.36.17:80/api/get-data/');
         const data = await response.json();
 
         const fundingSponsorData = {};

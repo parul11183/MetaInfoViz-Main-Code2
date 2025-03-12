@@ -232,7 +232,7 @@
 //   const fetchData = async () => {
 //     setLoading(true);
 //     try {
-//       const response = await fetch('http://13.233.2.203:80/api/get-team-size/');
+//       const response = await fetch('http://3.6.36.17:80/api/get-team-size/');
 //       if (!response.ok) {
 //         throw new Error('Failed to fetch team sizes');
 //       }
@@ -608,7 +608,7 @@ const TeamSizeOverview = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://13.233.2.203:80/api/get-team-size/');
+      const response = await fetch('http://3.6.36.17:80/api/get-team-size/');
       if (!response.ok) {
         throw new Error('Failed to fetch team sizes');
       }
