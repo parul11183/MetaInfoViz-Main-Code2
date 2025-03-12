@@ -78,7 +78,7 @@ const TopAuthors = () => {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await axios.get("http://13.233.2.203:80/api/get-data/");
+            const response = await axios.get("http://3.6.36.17:80/api/get-data/");
             const jsonData = response.data;
             console.log("Fetched Data:", jsonData);
 
@@ -150,7 +150,7 @@ const TopAuthors = () => {
         setIsSummarizing(true);
         setSummary("");
         try {
-            const response = await axios.post('http://13.233.2.203:80/api/generate-summary/', {
+            const response = await axios.post('http://3.6.36.17:80/api/generate-summary/', {
                 authors: topAuthors,
                 yearRange: { start: chartConfig.startYear, end: chartConfig.endYear },
                 totalAuthors: displayedAuthorsCount
