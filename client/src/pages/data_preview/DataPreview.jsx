@@ -28,7 +28,7 @@
 //         const filePath = localStorage.getItem('tempFilePath');
         
 //         // Fetch the CSV file from the temp location
-//         const response = await axios.get('http://13.233.2.203:80/api/read-temp-file/', {
+//         const response = await axios.get('http://3.6.36.17:80/api/read-temp-file/', {
 //           params: {
 //             file_path: filePath || 'temp_uploads/current_upload.csv'
 //           }
@@ -188,7 +188,7 @@ const DataPreview = () => {
         const filePath = localStorage.getItem('tempFilePath');
         
         // Fetch the CSV file from the temp location
-        const response = await axios.get('http://13.233.2.203:80/api/read-temp-file/', {
+        const response = await axios.get('http://3.6.36.17:80/api/read-temp-file/', {
           params: {
             file_path: filePath || 'temp_uploads/current_upload.csv'
           }
