@@ -73,7 +73,7 @@ const Home = () => {
         tempFormData.append('file', file);
         
         await axios.post(
-          "http://3.6.36.17:8000/api/temp_upload/",
+          "http://3.6.36.17:80/api/temp_upload/",
           tempFormData,
           {
             headers: {
@@ -85,7 +85,7 @@ const Home = () => {
 
       // Then process all files together for column analysis
       const response = await axios.post(
-        "http://3.6.36.17:8000/api/upload-csv/",
+        "http://3.6.36.17:80/api/upload-csv/",
         formData,
         {
           headers: {
