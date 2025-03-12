@@ -324,7 +324,7 @@
 //       });
       
 //       // Save the mappings configuration using the existing endpoint
-//       await axios.post("http://13.233.2.203:80/api/send-column-mappings/", {
+//       await axios.post("http://3.6.36.17:80/api/send-column-mappings/", {
 //         mappings: selectedMappings,
 //         columns: Object.values(selectedMappings),
 //         features: selectedFeatures,
@@ -339,7 +339,7 @@
 
 //       // Process the data with mappings using the existing endpoint
 //       const response = await axios.post(
-//         "http://13.233.2.203:80/api/upload-csv2/",
+//         "http://3.6.36.17:80/api/upload-csv2/",
 //         {
 //           mappings: selectedMappings
 //         },
