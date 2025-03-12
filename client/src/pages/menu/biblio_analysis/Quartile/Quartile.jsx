@@ -127,7 +127,7 @@ const Quartile = () => {
                 setIssnToQuartile(mapping);
 
                 // Fetch journal data
-                const apiResponse = await fetch("http://13.233.2.203:80/api/get-data/");
+                const apiResponse = await fetch("http://3.6.36.17:80/api/get-data/");
                 const data = await apiResponse.json();
                 setJournalData(data);
 
@@ -229,7 +229,7 @@ const Quartile = () => {
     
             // Send the prompt to the backend for summary generation
             const response = await axios.post(
-                "http://13.233.2.203:80/api/generate-summary/",
+                "http://3.6.36.17:80/api/generate-summary/",
                 { prompt },
                 {
                     headers: { 'Content-Type': 'application/json' },

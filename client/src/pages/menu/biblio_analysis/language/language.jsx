@@ -89,7 +89,7 @@ const LanguageAnalysis = () => {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await axios.get("http://13.233.2.203:80/api/get-data/");
+            const response = await axios.get("http://3.6.36.17:80/api/get-data/");
             const jsonData = response.data;
             console.log("Fetched Data:", jsonData);
 
@@ -202,7 +202,7 @@ const LanguageAnalysis = () => {
     
             // Send the prompt to the backend for summary generation
             const response = await axios.post(
-                "http://13.233.2.203:80/api/generate-summary/",
+                "http://3.6.36.17:80/api/generate-summary/",
                 { prompt },
                 {
                     headers: { 'Content-Type': 'application/json' },
